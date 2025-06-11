@@ -11,6 +11,7 @@
 - نقل ونسخ الملفات من مجلد إلى آخر.
 - تحويل صور متعددة إلى ملف PDF.
 - واجهات API مرنة وسهلة التوصيل مع أي واجهة مستخدم.
+  
 
 ## بنية ملفات المشروع المقترحة
 
@@ -32,12 +33,14 @@
 ### رفع الملفات
 
 - **رفع ملف واحد** عبر endpoint:
+  
 POST /upload
 Content-Type: multipart/form-data
 Field: file
 
 
 - **رفع عدة ملفات دفعة واحدة**:
+  
 POST /upload-multiple
 Content-Type: multipart/form-data
 Field: files[]
@@ -46,9 +49,11 @@ Field: files[]
 ### حذف الملفات
 
 - **حذف ملف واحد**:
+  
 DELETE /delete?fileName=example.pdf
 
 - **حذف عدة ملفات دفعة واحدة**:
+  
 POST /delete-multiple
 {
 "fileNames": ["file1.pdf", "file2.docx"]
@@ -58,6 +63,7 @@ POST /delete-multiple
 ### نقل أو نسخ الملفات
 
 - **نسخ ملفات من مجلد إلى آخر**:
+  
 POST /copy-multiple
 {
 "fileNames": ["doc1.pdf", "doc2.pdf"],
@@ -67,6 +73,7 @@ POST /copy-multiple
 
 
 - **نقل ملفات من مجلد إلى آخر**:
+  
 POST /move-multiple
 {
 "fileNames": ["doc1.pdf"],
@@ -88,12 +95,14 @@ POST /zip-files
 
 يتم حفظ الملف المضغوط داخل مجلد `/Zipped`.
 
+
 ### الملفات المؤقتة
 
 - يتم حفظ الملفات مؤقتًا داخل مجلد `Temp`.
 - ينصح بإضافة BackgroundService لحذف الملفات المؤقتة القديمة كل فترة زمنية.
 - يتم نقل الملفات إلى مجلد دائم (مثل `Permanent`) بعد المعالجة أو الاستخدام.
   
+
 
 ### تحويل الصور إلى PDF
 
