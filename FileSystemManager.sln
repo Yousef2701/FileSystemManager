@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35527.113 d17.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileSystemManager", "FileSystemManager\FileSystemManager.csproj", "{4D20E24B-612E-4E09-8EEF-E3C61DD8F57F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileSystemManager.Core", "FileSystemManager.Core\FileSystemManager.Core.csproj", "{79FD55E9-51C2-4AFD-9298-18EC0482433C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4D20E24B-612E-4E09-8EEF-E3C61DD8F57F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D20E24B-612E-4E09-8EEF-E3C61DD8F57F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D20E24B-612E-4E09-8EEF-E3C61DD8F57F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D20E24B-612E-4E09-8EEF-E3C61DD8F57F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79FD55E9-51C2-4AFD-9298-18EC0482433C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79FD55E9-51C2-4AFD-9298-18EC0482433C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79FD55E9-51C2-4AFD-9298-18EC0482433C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79FD55E9-51C2-4AFD-9298-18EC0482433C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
